@@ -1,0 +1,121 @@
+/*******************************************************************************
+ * ROFI SQUARED THEME USING THE NORD PALETTE 
+ * User                 : LR-Tech               
+ * Theme Repo           : https://github.com/lr-tech/rofi-themes-collection
+ *******************************************************************************/
+
+* {
+    font:   "Cascadia Code 12";
+
+    /* bg0:     #2E3440; */
+    /* bg1:     #3B4252; */
+    /* fg0:     #D8DEE9; */
+
+    color0: #0a0f12;
+    color1: #525864;
+    color2: #A6836C;
+    color3: #2B5A85;
+    color4: #2E5D8A;
+    color5: #537192;
+    color6: #6F87A2;
+    color7: #c2c3cb;
+    color8: #87888e;
+    color9: #525864;
+    color10: #A6836C;
+    color11: #2B5A85;
+    color12: #2E5D8A;
+    color13: #537192;
+    color14: #6F87A2;
+    color15: #c2c3cb;
+
+    bg0:     @color0;
+    bg1:     @color0;
+    fg0:     @color7;
+    urgent-color:     @color15;
+    accent-color:     @color1;
+
+    /* accent-color:     #88C0D0; */
+    /* urgent-color:     #EBCB8B; */
+
+     
+
+    background-color:   transparent;
+    text-color:         @fg0;
+
+    margin:     0;
+    padding:    0;
+    spacing:    0;
+}
+
+window {
+    location:   center;
+    width:      420;
+    y-offset:   -160;
+
+    background-color:   @bg0;
+}
+
+inputbar {
+    spacing:    8px; 
+    padding:    8px;
+
+    background-color:   @bg1;
+}
+
+prompt, entry, element-icon, element-text {
+    vertical-align: 0.5;
+}
+
+prompt {
+    text-color: @accent-color;
+}
+
+textbox {
+    padding:            8px;
+    background-color:   @bg1;
+}
+
+listview {
+    padding:    4px 0;
+    lines:      8;
+    columns:    1;
+
+    fixed-height:   false;
+}
+
+element {
+    padding:    8px;
+    spacing:    8px;
+}
+
+element normal normal {
+    text-color: @fg0;
+}
+
+element normal urgent {
+    text-color: @urgent-color;
+}
+
+element normal active {
+    text-color: @accent-color;
+}
+
+element selected {
+    text-color: @bg0;
+}
+
+element selected normal, element selected active {
+    background-color:   @accent-color;
+}
+
+element selected urgent {
+    background-color:   @urgent-color;
+}
+
+element-icon {
+    size:   0.8em;
+}
+
+element-text {
+    text-color: inherit;
+}
